@@ -19,18 +19,13 @@
       "description": "Dapatkan String Session di Grup » https://t.me/SharingUserbot » Lalu ketik #string",
       "required": true
     },
-    "HEROKU_APP_NAME": {
-      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
-      "required": true
     },
-    "HEROKU_API_KEY": {
-      "description": "Ambil Heroku API KEY mu disini » https://dashboard.heroku.com/account",
-      "required": true
+  
     }
   },
   "addons": [
     {
-    "plan": "heroku-postgresql",
+    "plan": "railway",
       "options": {
         "version": "12"
       }
@@ -38,7 +33,7 @@
   ],
   "buildpacks": [
     {
-      "url": "heroku/python"
+      "url": "python"
     },
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
